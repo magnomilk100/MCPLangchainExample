@@ -20,23 +20,30 @@ MCPLangchainExample/
 ## ⚙️ Setup & Installation
 
 1. **Clone the repo**
+
    ```bash
    git clone https://github.com/magnomilk100/MCPLangchainExample.git
    cd MCPLangchainExample
    ```
 
-Install Dependencies
-python3 -m venv venv
-source venv/bin/activate # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+2. **Install Dependencies**
 
-Set environment variables
-export OPENAI_API_KEY=your_openai_api_key
+   ```bash
+   python3 -m venv venv && source venv/bin/activate
+   source venv/bin/activate # Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
-✅ Quick Start Summary
-git clone ... && cd MCPLangchainExample
-python3 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY=...
-python math_server.py & python weather_server.py &
-python client.py
+3. **Set environment variables**
+   ```bash
+   Create an .env file in the root of the project
+   Add to it
+       GROQ_API_KEY="<<Here the Groq api key, refer to groq api web site to get it>>"
+   ```
+
+## ✅ Start Server and Client
+
+    ```bash
+        python math_server.py & python weather_server.py &
+        python client.py
+    ```
