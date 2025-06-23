@@ -6,14 +6,18 @@ Built to demonstrate how to start MCP servers and connect them to LangChain clie
 
 ---
 
-## 📁 Project Structure
+## 📁 Project
 
+**Structure**
+
+```bash
 MCPLangchainExample/
 ├── math_server.py # Example MCP server (stdio)
 ├── weather_server.py # Example MCP server (streamable-http)
 ├── client.py # LangChain client integrating both servers
 ├── requirements.txt # Python dependencies
 └── README.md # This file
+```
 
 ---
 
@@ -43,7 +47,7 @@ MCPLangchainExample/
 
 ## ✅ Start Server and Client
 
-    ```bash
-        python math_server.py & python weather_server.py &
-        python client.py
-    ```
+```bash
+     python math_server.py & python weather_server.py &
+     python client.py
+```
